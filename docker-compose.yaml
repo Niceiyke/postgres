@@ -8,6 +8,8 @@ services:
       POSTGRES_USER: postgresec2
       POSTGRES_PASSWORD: postgresec2
       POSTGRES_DB: postgresec2
+    volumes:
+      - /data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
   pgadmin:
