@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: postgresec2
       POSTGRES_DB: postgresec2
     volumes:
-      - /data:/var/lib/postgresql/data
+      - /postgres/data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
   pgadmin:
@@ -21,3 +21,4 @@ services:
       PGADMIN_DEFAULT_PASSWORD: root
     ports:
       - "5050:80"
+  
